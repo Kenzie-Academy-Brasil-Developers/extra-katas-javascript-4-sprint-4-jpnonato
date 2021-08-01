@@ -59,14 +59,18 @@ function kata3(){
 kata3();
 
 
-// function kata4(){
-//     let cities = gotCitiesCSV.replace(/,/g, ";" )
-//     let criarp = document.createElement("p")
-//     sec4.appendChild(criarp)
-//     criarp.innerText = cities
-// };
+ function kata4(){
+    let criarh3 = document.createElement("h3")
+    sec4.appendChild(criarh3)
+    criarh3.innerText = "Kata 4: "
 
-// kata4();
+    let cities = lotrCitiesArray.join()
+    let criarp = document.createElement("p")
+    sec4.appendChild(criarp)
+    criarp.innerText = cities
+ };
+
+ kata4();
 
 
 function kata5(){
@@ -332,3 +336,295 @@ function kata20(){
 };
 
 kata20();
+
+//katas bonus//
+function kata21(){
+    let sec21 = document.getElementById("bonus1")
+    let criarh3 = document.createElement("h3")
+    sec21.appendChild(criarh3)
+    criarh3.innerText = "Kata-bônus 1: "
+
+    let newBestThing = bestThing.split(" ")
+    let result = 0
+    for(let i = 0; i < newBestThing.length; i++){
+        if( newBestThing[i] === "only"){
+           result += i
+        }  else {
+            result += 0
+        }
+    }
+    let criarp = document.createElement("p")
+    sec21.appendChild(criarp)
+    criarp.innerText = result
+    
+};
+
+kata21();
+
+function kata22(){
+    let sec22 = document.getElementById("bonus2")
+    let criarh3 = document.createElement("h3")
+    sec22.appendChild(criarh3)
+    criarh3.innerText = "Kata-bônus 2: "
+
+    let newBestThing = bestThing.split(" ")
+    let result = 0
+    for(let i = 0; i < newBestThing.length; i++){
+        if( newBestThing[i] === newBestThing[newBestThing.length - 1]){    
+           result += i
+        }  else {
+            result += 0
+        }
+    }
+    let criarp = document.createElement("p")
+    sec22.appendChild(criarp)
+    criarp.innerText = result
+    
+};
+
+kata22();
+
+
+function kata23(){
+    let sec23 = document.getElementById("bonus3")
+    let criarh3 = document.createElement("h3")
+    sec23.appendChild(criarh3)
+    criarh3.innerText = "Kata-bônus 3: "
+
+    let cities = gotCitiesCSV.split(",")
+    let result = []
+    let a = []
+    for(let i = 0; i < cities.length; i++){
+        if( (cities[i].includes("aa") === true) || (cities[i].includes("ee") === true )){    
+           result.push(cities[i])
+        } if ((cities[i].includes("ii") === true) || (cities[i].includes("oo") === true)){
+            result.push(cities[i])
+        } if (cities[i].includes("uu") === true){
+            result.push(cities[i])
+        } else {
+            a.push(cities[i])
+        }
+    }
+
+    let criarp = document.createElement("p")
+    sec23.appendChild(criarp)
+    criarp.innerText = result
+    
+}
+
+kata23();
+
+
+function kata24(){
+    let sec24 = document.getElementById("bonus4")
+    let criarh3 = document.createElement("h3")
+    sec24.appendChild(criarh3)
+    criarh3.innerText = "Kata-bônus 4: "
+
+    let result = []
+    let a = []
+    for(let i = 0; i < lotrCitiesArray.length; i++){
+        if(lotrCitiesArray[i].slice(-2) === "or"){    
+           result.push(lotrCitiesArray[i])
+        }  else {
+            a.push(lotrCitiesArray[i])
+        }
+    }
+
+    let criarp = document.createElement("p")
+    sec24.appendChild(criarp)
+    criarp.innerText = result
+    
+}
+
+kata24();
+
+
+
+function kata25(){
+    let sec25 = document.getElementById("bonus5")
+    let criarh3 = document.createElement("h3")
+    sec25.appendChild(criarh3)
+    criarh3.innerText = "Kata-bônus 5: "
+
+    let result = []
+    let a = []
+    let cities = bestThing.split(" ")
+    for(let i = 0; i < cities.length; i++){
+        if(cities[i].slice(0,1) === "b"){    
+           result.push(cities[i])
+        }  else {
+            a.push(cities[i])
+        }
+    }
+
+    let criarp = document.createElement("p")
+    sec25.appendChild(criarp)
+    criarp.innerText = result
+    
+}
+
+kata25();
+
+
+
+function kata26(){
+    let sec26 = document.getElementById("bonus6")
+    let criarh3 = document.createElement("h3")
+    sec26.appendChild(criarh3)
+    criarh3.innerText = "Kata-bônus 6: "
+
+    let result = ""
+    for(let i = 0; i < lotrCitiesArray.length; i++){
+        if(lotrCitiesArray[i] === "Mirkwood"){    
+           result = "sim"
+        }  else {
+
+        }
+    }
+
+    let criarp = document.createElement("p")
+    sec26.appendChild(criarp)
+    criarp.innerText = result
+    
+}
+
+kata26();
+
+
+function kata27(){
+    let sec27 = document.getElementById("bonus7")
+    let criarh3 = document.createElement("h3")
+    sec27.appendChild(criarh3)
+    criarh3.innerText = "Kata-bônus 7: "
+
+    let result = ""
+    let a = ""
+    for(let i = 0; i < lotrCitiesArray.length; i++){
+        if(lotrCitiesArray[i] === "Hollywood"){    
+           result = "sim"
+        }  else {
+            result = "não"
+        }
+    }
+
+    let criarp = document.createElement("p")
+    sec27.appendChild(criarp)
+    criarp.innerText = result
+    
+}
+
+kata27();
+
+
+function kata28(){
+    let sec28 = document.getElementById("bonus8")
+    let criarh3 = document.createElement("h3")
+    sec28.appendChild(criarh3)
+    criarh3.innerText = "Kata-bônus 8: "
+
+    let result = 0
+    for(let i = 0; i < lotrCitiesArray.length; i++){
+        if(lotrCitiesArray[i] === "Mirkwood"){    
+           result = i
+        }  else {
+           result += 0
+        }
+    }
+
+    let criarp = document.createElement("p")
+    sec28.appendChild(criarp)
+    criarp.innerText = result
+    
+}
+
+kata28();
+
+
+
+function kata29(){
+    let sec29 = document.getElementById("bonus9")
+    let criarh3 = document.createElement("h3")
+    sec29.appendChild(criarh3)
+    criarh3.innerText = "Kata-bônus 9: "
+
+    let result = []
+    let a = []
+    for(let i = 0; i < lotrCitiesArray.length; i++){
+        if(lotrCitiesArray[i].includes(" ") === true){    
+           result.push(lotrCitiesArray[i])
+           let criarp = document.createElement("p")
+           sec29.appendChild(criarp)
+           criarp.innerText = result
+        } else {
+            a.push(lotrCitiesArray[i])
+        }
+    }
+
+    
+}
+
+kata29();
+
+
+
+function kata30(){
+    let sec30 = document.getElementById("bonus10")
+    let criarh3 = document.createElement("h3")
+    sec30.appendChild(criarh3)
+    criarh3.innerText = "Kata-bônus 10: "
+
+    let result = []
+    for(let i = lotrCitiesArray.length - 1; i >= 0; i--){ 
+        result.push(lotrCitiesArray[i])  
+    }
+
+    let criarp = document.createElement("p")
+    sec30.appendChild(criarp)
+    criarp.innerText = result
+    
+}
+
+kata30();
+
+
+
+function kata31(){
+    let sec31 = document.getElementById("bonus11")
+    let criarh3 = document.createElement("h3")
+    sec31.appendChild(criarh3)
+    criarh3.innerText = "Kata-bônus 11: "
+
+    let result = lotrCitiesArray.sort()
+    let criarp = document.createElement("p")
+    sec31.appendChild(criarp)
+    criarp.innerText = result
+    
+}
+
+kata31();
+
+
+
+function kata32(){
+    let sec32 = document.getElementById("bonus12")
+    let criarh3 = document.createElement("h3")
+    sec32.appendChild(criarh3)
+    criarh3.innerText = "Kata-bônus 12: "
+
+    let result = lotrCitiesArray.sort(function comparar(a, b){
+        if(a.length > b.length){
+           return 1
+        } if(a.length < b.length){
+            return -1
+         } if(a.length = b.length){
+            return 0
+         }
+    })
+    let criarp = document.createElement("p")
+    sec32.appendChild(criarp)
+    criarp.innerText = result
+    
+}
+
+kata32();

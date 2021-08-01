@@ -1,1 +1,19 @@
 /* você pode estilizar se quiser !!! */
+
+section{
+    border: rgb(82, 78, 78) solid 1px;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 2px 0 8px 0;
+    background-color: rgb(221, 215, 215);
+    width: 92%;
+}
+
+h1{
+    text-align: center;
+    color: grey;
+}
+body{
+    background-color: rgb(76, 7, 165);
+}
+
